@@ -1,1 +1,1 @@
-# SharedPtrAcademy SXAL BANER KA
+# SharedPtrAcademy ուղղեցի

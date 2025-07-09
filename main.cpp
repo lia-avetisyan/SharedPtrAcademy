@@ -8,7 +8,7 @@ private:
     size_t* count; //shared count, * need that the same instance has same count, not static because one object should have different count from another and the count should differ for different objs
 public:
     SharedPtr(): data(nullptr), count(new size_t(0)){}
-    explicit SharedPtr(U* new_data) : data(new_data), count(nullptr) {}
+    explicit SharedPtr(U* new_data) : data(new_data), count(new size_t(1)) {}
     SharedPtr(const SharedPtr& other): data(other.data), count(other.count) {
        if (data) ++(*count);
     }
